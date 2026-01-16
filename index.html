@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Raja Alpauji</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sky-blue: #a0c4ff;
+            --neon-yellow: #e2fd52;
+            --deep-blue: #4361ee;
+            --paper-white: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--sky-blue);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-canvas {
+            background-color: var(--paper-white);
+            max-width: 900px;
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 10px 10px 0px rgba(0,0,0,0.1);
+            position: relative;
+            border: 1px dashed #ccc;
+        }
+
+        /* Ikon Paperclip Statis (Base64 agar anti error) */
+        .paperclip {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            width: 40px;
+            transform: rotate(-15deg);
+            opacity: 0.7;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .hero-text h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 100px;
+            margin: 0;
+            color: var(--deep-blue);
+            -webkit-text-stroke: 2px var(--neon-yellow);
+            line-height: 0.9;
+        }
+
+        .name-tag {
+            font-size: 24px;
+            margin-top: 10px;
+            background: var(--neon-yellow);
+            display: inline-block;
+            padding: 5px 15px;
+            font-weight: bold;
+            color: black;
+        }
+
+        /* Bingkai Foto Profil (Scrapbook Style) */
+        .photo-frame {
+            background: white;
+            padding: 10px 10px 40px 10px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+            transform: rotate(5deg);
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .photo-frame img {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+            background-color: #f0f0f0;
+            display: block;
+        }
+
+        .about-section {
+            max-width: 600px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        /* Container Program & Tools (Dark Bottom) */
+        .tools-container {
+            background-color: var(--deep-blue);
+            padding: 30px;
+            margin: 0 -50px -50px -50px;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .tools-title {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--neon-yellow);
+            display: inline-block;
+        }
+
+        .software-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+        }
+
+        /* Card Software Putih Bersih */
+        .software-card {
+            background: white;
+            padding: 20px 10px;
+            border-radius: 8px;
+            text-align: center;
+            border-bottom: 5px solid var(--neon-yellow);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Pake Placeholder yang stabil atau teks logo jika gambar mati */
+        .software-card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 12px;
+            object-fit: contain;
+        }
+
+        .software-card span {
+            font-size: 13px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: white;
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-canvas">
+    <div class="paperclip">📎</div>
+
+    <header>
+        <div class="hero-text">
+            <h1>Hello!</h1>
+            <div class="name-tag">I'm Raja Alpauji</div>
+            <p style="font-size: 14px; margin-top: 15px;">
+                <b>IG</b> @rrajaalf | <b>Email</b> rrajaalpauii@gmail.com
+            </p>
+        </div>
+        
+        <div class="photo-frame">
+            <img src="c:\Users\Raja Alpauji\Pictures\BACKUP FOTO\PXL_20250930_111342699.jpg" alt="Raja Alpauji" onerror="this.src='https://via.placeholder.com/200x250?text=Foto+Gue+Ja'">
+            <p style="font-family: cursive; margin: 10px 0 0 0; font-size: 18px; color: #555;"></p>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <h3 style="background: var(--neon-yellow); display:inline; padding: 2px 8px;">ABOUT ME</h3>
+        <p>Halo! Gue seorang Graphic Designer sekaligus Video Maker yang percaya kalau visual yang keren bukan cuma soal estetika, tapi soal gimana pesan itu bisa nyampe ke hati yang liat. Gue suka banget ngebedah konsep dan numpahin ide ke dalam bentuk desain yang clean atau video yang bercerita.</p>
+        <p>Gue tipikal orang yang sangat menghargai konsistensi—sama kayak selera makan gue yang menunya itu-itu aja karena gue percaya sama kualitas yang udah pasti. Ditemenin segelas <b>Hazelnut Latte</b>, gue siap nge-transformasi ide-ide liar lo jadi karya visual yang solid dan punya karakter.</p>
+    </section>
+
+    <div class="tools-container">
+        <div class="tools-title">PROGRAMS & TOOLS</div>
+        <div class="software-grid">
+            <div class="software-card">
+                <img src="https://img.icons8.com/color/96/adobe-photoshop.png" alt="Ps">
+                <span>Adobe Photoshop</span>
+            </div>
+            <div class="software-card">
+                <img src="https://img.icons8.com/color/96/adobe-illustrator.png" alt="Af">
+                <span>Affinity</span>
+            </div>
+            <div class="software-card">
+                <img src="a137ee4e4aac2d485b0cc9c33fdb9f45.jpg" alt="Capcut">
+                <span>CapCut</span>
+            </div>
+            <div class="software-card">
+                <img src="ad8b2cf5e7b44514ab71b9fd9666ec16.jpg" alt="AM">
+                <span>Alight Motion</span>
+            </div>
+            <div class="software-card">
+                <img src="https://img.icons8.com/color/96/figma.png" alt="Figma">
+                <span>Figma</span>
+            </div>
+        </div>
+        <footer>"Lakukan yang terbaik aja."</footer>
+    </div>
+</div>
+
+</body>
+</html>
